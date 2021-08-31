@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+    <title>Firma DecibelPixel</title>
+    <style>
+        body{
+            max-width: 1244px;
+            margin: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="mui-container-fluid">
+    <h1 style="margin-bottom: 50px">Constructor de Firmas</h1>
+    <div class="mui-row"  id="app">
+        <div id="firm" class="mui-col-md-8">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <div dir="ltr">
+        <div dir="ltr" style="color:rgb(34,34,34)">
+            <div dir="ltr">
+                <table width="470" cellspacing="0" cellpadding="0" border="0" style="width:470px">
+                    <tbody>
+                        <tr valign="top">
+                            <td style="padding-left:10px;width:10px;padding-right:10px"><img
+                                    src="https://s3.amazonaws.com/ucwebapp.wisestamp.com/894cb27c-1b53-47e1-98d1-c71cff82b755/logo_decibelpixel.format_png.resize_120x.png"
+                                    alt="photo" width="90" height="96" style="border-radius:4px;max-width:120px"></td>
+                            <td style="border-right:1px solid rgb(221,75,57)"><br></td>
+                            <td style="text-align:initial;font-stretch:normal;padding:0px 10px">
+                                <font color="#646464" face="Arial"><span style="font-size:14px"><b>{{name}}</b></span></font><br>
+                                <div style="font-family:Arial;font-size:14px;color:rgb(100,100,100)">{{role}},&nbsp;Decibelpixel</div>
+                                <div style="font-family:Arial;color:rgb(141,141,141);font-size:13px;padding:5px 0px">
+                                    <span v-if="phone != ''">
+                                        <span
+                                        style="display:inline-block"><a :href="'tel:'+phone"
+                                            style="color:rgb(141,141,141)" target="_blank">{{phone}}</a></span>&nbsp;<span
+                                        style="color:rgb(221,75,57);display:inline-block">|</span>&nbsp;
+                                    </span>
+                                    
+                                    <span
+                                        style="display:inline-block"><a :href="'mailto:'+email"
+                                            style="color:rgb(141,141,141)" target="_blank">{{email}}</a></span>&nbsp;<span
+                                        style="color:rgb(221,75,57);display:inline-block">|</span>&nbsp;<span
+                                        style="white-space:nowrap;display:inline-block"><a
+                                            href="https://mailtrack.io/trace/link/0bfe0bdbacefc35c0e9c1f3a0ff62258f0180962?url=http%3A%2F%2Fwww.decibelpixel.cl%2F&amp;userId=5621825&amp;signature=9e1fb929fe0daeb2"
+                                            style="color:rgb(141,141,141)" target="_blank">www.decibelpixel.cl</a></span>
+                                </div>
+                                <div style="font-family:Arial;font-size:13px;padding:5px 0px"><a
+                                        href="https://mailtrack.io/trace/link/9b9dd150beed597ecb96e827bf303d74dc26bdec?url=http%3A%2F%2Fstore.dbpx.cl%2F&amp;userId=5621825&amp;signature=778749357e128efa"
+                                        target="_blank">
+                                        <font color="#666666">store.dbpx.cl</font>
+                                    </a></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div dir="ltr" style="color:rgb(34,34,34)"><br></div>
+        <div dir="ltr" style="color:rgb(34,34,34)"><a href="https://store.dbpx.cl/camara-web-logitech-brio-ultra-hd-pro.html?utm_source=rosales&utm_medium=banner-email&utm_campaign=logitech-brio-banner"><img
+                src="https://decibelpixel.odoo.com/web/image/50987/Firma_Camara%2019062020.png" width="420"
+                height="105"></a><br></div>
+        <div dir="ltr" style="color:rgb(34,34,34)">
+            <div dir="ltr">
+                <font color="#009900" face="Webdings" size="4">P</font>
+                <font color="#009900" size="2">
+                    <font face="verdana, arial, helvetica">&nbsp;</font>
+                </font>
+                <font color="#009900" face="arial, helvetica, sans-serif" size="2">Por favor considera el medio ambiente
+                    antes de imprimir este correo</font><br>
+            </div>
+            <div dir="ltr">
+                <font size="1">Esta comunicación (incluidos sus anexos) es Información&nbsp;Confidencial, dirigida
+                    exclusivamente a su destinatario, quien deberá resguardar la&nbsp;confidencialidad. Queda prohibido la
+                    divulgación, modificación, reproducción o uso de la información aquí contenida por cualquier otra
+                    persona que no sea su destinatario. Si Ud. ha recibido este mail por error, le agradeceremos nos lo
+                    informe a la brevedad respondiendo a este e-mail a la dirección del remitente, destruya las copias y por
+                    favor, borre de su sistema el mensaje recibido.<br><br>This message (including any attachments)
+                    constitutes Confidential Information, and is intended for the exclusive use of the named addressee, who
+                    shall preserve its confidentiality. Readers of this message other than the intended recipient are
+                    forbidden to disseminate, modify, distribute or reproduce this message. If you have received this email
+                    in error please notify</font><span style="font-size:x-small">&nbsp;us immediately by replying to the
+                    sender of this message, discard any copies, and delete this message from your system.</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mui-col-md-4">
+    <form @submit.prevent="copy" class="mui-form">
+        <legend>Ingresar Datos Firma</legend>
+        <div class="mui-textfield">
+            <input type="text" v-model="name" placeholder="Ej. Claudio Jure Olave">
+            <label>Nombre</label>
+          </div>
+          <div class="mui-textfield">
+            <input type="text" v-model="role" placeholder="Ej. Gerente Comercial">
+            <label>Cargo</label>
+          </div>
+          <div class="mui-textfield">
+            <input type="text" v-model="email" placeholder="Ej. cj@decibelpixel.cl">
+            <label>Correo</label>
+          </div>
+          <div class="mui-textfield">
+            <input type="text" v-model="phone" placeholder="Ej. 56(9)43553432">
+            <label>Teléfono</label>
+          </div>
+          
+        <button type="submit" class="mui-btn mui-btn--raised mui-btn--primary">Copiar</button>
+    </form>
+</div>
+    
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                name: "",
+                email: "",
+                phone: "",
+                role: ""
+            },
+            methods:{
+                copy(){
+                    var inputFirm = document.querySelector("#firm-input")
+                    var firmDiv = document.querySelector("#firm")
+                    this.copyElementToClipboard(firmDiv)
+                    alert("Copiado Exitosamente, ahora pegar en la firma de gmail")
+                },
+                copyElementToClipboard(element) {
+                    window.getSelection().removeAllRanges();
+                    let range = document.createRange();
+                    range.selectNode(typeof element === 'string' ? document.getElementById(element) : element);
+                    window.getSelection().addRange(range);
+                    document.execCommand('copy');
+                    window.getSelection().removeAllRanges();
+                }
+            }
+            })
+    </script>
+</body>
+</html>
